@@ -16,17 +16,56 @@
 
 #import "OKGridView.h"
 
+@interface OKGridView(PrivateMethods)
+
+- (void)commonSetup;
+
+@end
+
+
+#pragma mark -
+
 @implementation OKGridView
+
+@synthesize dataSource = mDataSource;
+@synthesize delegate = mDelegate;
+
+@synthesize rowHeight = mRowHeight;
+@synthesize columnWidth = mColumnWidth;
+
+
+#pragma mark Object Lifecycle
 
 - (id)initWithFrame:(CGRect)frame
 {
    if(self = [super initWithFrame:frame])
    {
-      // Initialization code
+      [self commonSetup];
    }
    
    return self;
 }
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+   if(self = [super initWithCoder:aDecoder])
+   {
+      [self commonSetup];
+   }
+   
+   return self;
+}
+
+- (void)dealloc
+{
+   [mReusableGridCells release];
+   mReusableGridCells = nil;
+   
+   [super dealloc];
+}
+
+
+#pragma mark -
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -36,9 +75,22 @@
 }
 */
 
-- (void)dealloc
+@end
+
+
+#pragma mark -
+
+@implementation OKGridView(PrivateMethods)
+
+- (void)commonSetup
 {
-   [super dealloc];
+   // Set the default dimensions
+   mRowHeight = 44.0f;
+   mColumnWidth = 120.0f;
+   
+   // Set up cell reuse
+   mReusableGridCells = [[NSMutableDictionary alloc] init];
 }
 
 @end
+
