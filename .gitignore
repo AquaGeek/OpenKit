@@ -1,0 +1,14 @@
+# Ignore unnecessary files
+.DS_Store
+
+# Except the ignore file
+!.gitignore
+
+# Don't track our build directory
+build
+
+# Don't keep track of individual profiles in the Xcode project bundle
+*.pbxuser
+*.mode1v3
+*perspectivev3
+
