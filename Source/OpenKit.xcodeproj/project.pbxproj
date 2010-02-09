@@ -11,6 +11,8 @@
 		2FCFE09F1120D881008E3E21 /* OKGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFE09D1120D881008E3E21 /* OKGridView.m */; };
 		2FCFE0A21120D88D008E3E21 /* OKGridViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCFE0A01120D88D008E3E21 /* OKGridViewCell.h */; };
 		2FCFE0A31120D88D008E3E21 /* OKGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFE0A11120D88D008E3E21 /* OKGridViewCell.m */; };
+		2FCFE0C81120DCD0008E3E21 /* NSIndexPath+OKGridViewAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCFE0C61120DCD0008E3E21 /* NSIndexPath+OKGridViewAdditions.h */; };
+		2FCFE0C91120DCD0008E3E21 /* NSIndexPath+OKGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFE0C71120DCD0008E3E21 /* NSIndexPath+OKGridViewAdditions.m */; };
 		AA747D9F0F9514B9006C5449 /* OpenKit_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* OpenKit_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -20,6 +22,8 @@
 		2FCFE09D1120D881008E3E21 /* OKGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKGridView.m; sourceTree = "<group>"; };
 		2FCFE0A01120D88D008E3E21 /* OKGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKGridViewCell.h; sourceTree = "<group>"; };
 		2FCFE0A11120D88D008E3E21 /* OKGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKGridViewCell.m; sourceTree = "<group>"; };
+		2FCFE0C61120DCD0008E3E21 /* NSIndexPath+OKGridViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+OKGridViewAdditions.h"; sourceTree = "<group>"; };
+		2FCFE0C71120DCD0008E3E21 /* NSIndexPath+OKGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+OKGridViewAdditions.m"; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* OpenKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenKit_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libOpenKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpenKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,8 +75,18 @@
 				2FCFE09D1120D881008E3E21 /* OKGridView.m */,
 				2FCFE0A01120D88D008E3E21 /* OKGridViewCell.h */,
 				2FCFE0A11120D88D008E3E21 /* OKGridViewCell.m */,
+				2FCFE0C51120DC8B008E3E21 /* Utility */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		2FCFE0C51120DC8B008E3E21 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2FCFE0C61120DCD0008E3E21 /* NSIndexPath+OKGridViewAdditions.h */,
+				2FCFE0C71120DCD0008E3E21 /* NSIndexPath+OKGridViewAdditions.m */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
@@ -93,6 +107,7 @@
 				AA747D9F0F9514B9006C5449 /* OpenKit_Prefix.pch in Headers */,
 				2FCFE09E1120D881008E3E21 /* OKGridView.h in Headers */,
 				2FCFE0A21120D88D008E3E21 /* OKGridViewCell.h in Headers */,
+				2FCFE0C81120DCD0008E3E21 /* NSIndexPath+OKGridViewAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +156,7 @@
 			files = (
 				2FCFE09F1120D881008E3E21 /* OKGridView.m in Sources */,
 				2FCFE0A31120D88D008E3E21 /* OKGridViewCell.m in Sources */,
+				2FCFE0C91120DCD0008E3E21 /* NSIndexPath+OKGridViewAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
